@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      console.log('------------- #4');
+        var a = 2;
+        var b = 3;
+        var c = 7;
+        var d = 8;
+        console.log('a+b =', a + b);
+        console.log('c-b =', c - b);
+        console.log('a*b =', a * b);
+        console.log('d/a =', d / a)
+
+      console.log('------------- #5');
+        for (let i = 0; i < 5; i++) console.log( i );
+
+      console.log('------------- #6');
+        for (let i = 5; i > 0; i--) console.log( i );
+
+      console.log('------------- #7');
+        var score;
+        function getMarkInfo(score) {
+         if ((score==10)) {
+          console.log('У вас максимальный балл');
+        } 
+        else {
+          console.log('У вас средний балл');
+        }
+        }
+        getMarkInfo(10)
+        getMarkInfo(9)
+
+
+      console.log('------------- #8');
+        function getDayInfo(position) {
+         switch (position) {
+         case 0:
+            return "monday";
+         case 1:
+            return "tuesday";
+         case 2:
+            return "wednesday";
+         case 3:
+            return "thursday";
+         case 4:
+            return "friday";
+         case 5:
+            return "saturday";
+         case 6:
+            return "sunday";
+         default:
+            return "wrong data";
+         
+            }
+         }
+        console.log(getDayInfo(0))
+        console.log(getDayInfo(1))
+        console.log(getDayInfo(2))
+        console.log(getDayInfo(3))
+        console.log(getDayInfo(4))
+        console.log(getDayInfo(5))
+        console.log(getDayInfo(6))
+
+      console.log('------------- #9');
+        const arr = ['a', 'b', 'c'];
+        arr.push(1, 2, 3);
+        console.log(arr);
+      
+      console.log('------------- #10');
+        const arr1 = [1, 2, 3];
+        const arr2 =  [4, 5, 6];
+        const arr3 = arr1.concat(arr2);
+        console.log(arr3);
+      
+        console.log('------------- #11');
+        let n = prompt("Enter n: ")
+        function sumTo(n) {
+        let sum = 0;
+        for (let i = 1; i <= n; i++) {
+          sum += i;
+           }
+        return sum;
+}
+
+console.log(sumTo(n))
+    </script>
+</body>
+</html>
